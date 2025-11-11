@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <button class="burger" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <nav class="menu" id="menu">メニュー</nav>
+
+    <script>
+        const burger = document.querySelector('#burger');
+        const menu = document.querySelector('#menu');
+
+        if(burger){
+            burger.addEventListener('click',() => {
+                burger.classList.toggle('is-active');
+                menu.classList.toggle('is-active');
+            })
+        }
+    </script>
+</body>
+</html>
