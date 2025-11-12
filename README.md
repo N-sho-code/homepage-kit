@@ -17,3 +17,6 @@
 ・40行で完成！ハンバーガーメニューを作るCSSチュートリアル【HTML/CSS/Sass/JS】
 https://youtu.be/9sDuEL2dPe4?si=HNW_wjtIz8EKRLsh
 
+・ホバー付きソーシャルメディアボタンの作り方 - HTML/CSSのみ使用
+https://youtu.be/3P3HexnBo54?si=_EWD_KGCmxBogvkR
+
