@@ -1,0 +1,51 @@
+/*謎②*/
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");　
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html,
+body {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  background: linear-gradient(315deg, #aeb9ce 0%, #b8c3cf 74%);
+}
+.wrapper .button{
+  height: 60px;
+  width: 60px;
+  float: left;
+  margin: 0 5px;
+  background-color: white;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+.wrapper .button:hover{
+  width: 200px;
+}
+.wrapper .button .icon{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  text-align: center;
+}
+.wrapper .button .icon i{
+  font-size: 25px;
+  height: 60px;
+}
+
+.wrapper .button span{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+}
