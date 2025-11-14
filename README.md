@@ -12,11 +12,17 @@
   
 本リポジトリは 1つのリポジトリに機能をフォルダ分割してまとめています。これにより、管理が簡単になり、必要な機能だけをフォルダごとコピーして使うことができます。  
 ***
-**利用ツール、利用サイト**
+**利用ツール、利用サイト**  
+・40行で完成！ハンバーガーメニューを作るCSSチュートリアル【HTML/CSS/Sass/JS】 
+https://youtu.be/9sDuEL2dPe4?si=HNW_wjtIz8EKRLsh  
   
-・40行で完成！ハンバーガーメニューを作るCSSチュートリアル【HTML/CSS/Sass/JS】
-https://youtu.be/9sDuEL2dPe4?si=HNW_wjtIz8EKRLsh
+・ホバー付きソーシャルメディアボタンの作り方 - HTML/CSSのみ使用  
+https://youtu.be/3P3HexnBo54?si=_EWD_KGCmxBogvkR  
+  
+・HTMLだけでコンタクトフォーム(お問い合わせフォーム)を作る方法  
+https://youtu.be/7LjThrh8hRM?si=4vpL2P9Q_Fm2RXZL  
+  
+HTMLとCSSでブログ風ウェブサイトを模写コーディングしてみよう ~レスポンシブ対応~  
+https://youtu.be/4zQzPqKyJNk?si=Vz-bwAGELS8E_yMy  
 
-・ホバー付きソーシャルメディアボタンの作り方 - HTML/CSSのみ使用
-https://youtu.be/3P3HexnBo54?si=_EWD_KGCmxBogvkR
 
