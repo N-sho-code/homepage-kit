@@ -56,18 +56,127 @@ header ul li a{
     font-weight: 700;
     margin-top: 10px;
 }
-.new-article a {
+article a {
     text-decoration: none;
     clear: #000;
     display: block;
     margin-top: 10px;
 }
 
-.new-article a::after {
+article a::after {
     content: "";
     display: block;
     width: 80px;
     background-color: #000;
     height: 1px;
     margin: 0 auto;
+}
+
+/*main フィールド*/
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+main {
+    flex: 0.66;
+}
+main article {
+    margin-bottom: 50px;
+}
+main h1 {
+    font-size: 30px;
+}
+main ul {
+    list-style: none;
+    display: flex;
+    padding: 10px 0 10px 0;
+}
+main ul li {
+    margin-right: 40px;
+}
+main image {
+    width: 100%;
+}
+main .article-intro {
+    text-align: center;
+    padding: 10px 85px  30px 40px;
+}
+main .article-intro p {
+    font-weight: bold;
+}
+/*aside フィールド*/
+aside .icon {
+    border-radius: 50%;
+}
+aside {
+    flex: 0.33
+}
+aside .author {
+    text-align: center;
+    margin-bottom: 50px;
+}
+aside .author h4{
+    margin: 20px;
+}
+.author p {
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: left;
+}
+.author img {
+    width: 40%;
+}
+.ranking h4 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.ranking-article a {
+    text-align: center;
+    text-decoration-line: none;
+    color: #000;
+}
+.ranking-article a img {
+    padding: 5px;
+}
+.ranking-article p {
+    padding-right: 10px;
+    margin-bottom: 10px;
+}
+/*archive フィールド*/
+.archive {
+    margin-top: 40px;
+}
+.archive h4 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.archive ul {
+    list-style: none;
+    width: 80%;
+    margin: 0 auto;
+    border-bottom: 1px solid #000;
+}
+.archive ul li {
+    padding: 25px;
+    border-top: 1px solid #000;
+}
+.archive ul li a {
+    text-decoration: none;
+    color: #000;
+}
+/*メディアクエリ設定*/
+@media screen and (max-width: 768px) {
+    .new-article {
+        flex-direction: column;
+    }
+    .new-article article{
+        margin-bottom: 30px;
+    }
+    .container {
+        flex-direction: column;
+    }
+    aside .ranking img {
+        width: 100%;
+    }
+
 }
