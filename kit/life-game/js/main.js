@@ -16,7 +16,7 @@ const clear = () =>{
 function random() {
     for (let y = 1; y < height + 1; y++) {
         for (let x = 1; x < width + 1; x++) {
-            field[y][x] = Math.random() < 0.3 ? 1 : 0;
+            field[y][x] = Math.random() < 0.4 ? 1 : 0;
         }
     }
 };
@@ -30,12 +30,44 @@ const render = () =>{
     }
 };
 
+const Step = () => {
+    for(let y = 1;y < height + 1;y++){
+        for(let x = 1;x < width + 1;x++){
+            let count = 0;
+            for(let dy = -1;dy<=1;dy++){
+                for(let dx = -1;dx<=1;dx++){
+                    if(field[y+dy][x+dx]){
+                        count++;
+                    }
+                }
+            }
+            if((field[y][x] && (count=== 3||count=== 4))||
+            (!field[y][x]&&count=== 3)){
+                nextFild[y][x] = 1;
+            }else{
+                nextFild[y][x] = 0;
+            }
+        }
+    }
+    [field,nextFild]=[nextFild,field];
+}
+
 let ctx = null;
+let isWorking =false;
 const init = () => {
     const canvas = document.getElementById("canvas");
     ctx = canvas.getContext("2d");
     canvas.width = size * width;
     canvas.height = size * height;
+    document.getElementById("start").onclick=()=>{
+        isWorking =true;
+    }
+    document.getElementById("stop").onclick=()=>{
+        isWorking =false;
+    }
+    document.getElementById("random").onclick=()=>{
+        random();
+    }
 
     clear();
     random();
@@ -44,4 +76,12 @@ const init = () => {
 
 window.onload = () =>{
     init();
+    const tick = () =>{
+        setTimeout(tick,100);
+        if(isWorking){
+            Step();
+            render()
+        }
+    }
+    tick();
 };
