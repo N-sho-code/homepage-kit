@@ -64,10 +64,14 @@ nav {
         align-items: center;
         width: 50%;
         transform: translateX(100%);
+        justify-content: flex-start; /*行間隔を変更するのに必要*/
+
     }
 
     .nav-links li {
         opacity: 0;
+        margin: 20px 0;
+        
     }
 
     .burger {
@@ -77,8 +81,11 @@ nav {
 @keyframes navLinksFade {
     0%{
         opacity: 0;
+        transform: translateX(50px);
     }
     100%{
         opacity: 100;
+        transform: translateX(0);
+
     }
 }

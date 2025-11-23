@@ -6,7 +6,14 @@ burger.addEventListener("click",() => {
     nav.classList.toggle("nav-active");
 
     navLinks.forEach((link,index) => {
-        link.style.animation = `navLinksFade 0.3s ease forwards ${index/7+0.3}s`;
+        if(link.style.animation){
+            link.style.animation = "";
+        }else{
+            link.style.animation = `navLinksFade 0.3s ease forwards ${
+                index/7+0.3
+            }s`;
+    
+        }
     });
     
 });
