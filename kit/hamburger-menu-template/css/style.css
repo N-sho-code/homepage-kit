@@ -19,6 +19,7 @@ nav {
     display: flex;
     justify-content: space-around;
     width: 38%;
+    transition: all 0.4s ease-in-out;
 }
 .nav-links li{
     list-style: none;
@@ -37,6 +38,9 @@ nav {
     height: 3px;
     background-color: #fff;
     margin: 5px;
+}
+.nav-active {
+    transform: translateX(0%) !important;
 }
 
 @media screen and (max-width:1024px) {
@@ -68,5 +72,13 @@ nav {
 
     .burger {
         display: block;
+    }
+}
+@keyframes navLinksFade {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100;
     }
 }
