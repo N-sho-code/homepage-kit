@@ -29,6 +29,4 @@ https://youtu.be/4zQzPqKyJNk?si=Vz-bwAGELS8E_yMy
 ・レスポンシブに対応したナビゲーションバーの作り方を解説【HTML/CSS入門】  
 https://youtu.be/feu9m1E4T9E?si=J4SqsalmNwxbJ5sw  
   
-  
-・
 ***
